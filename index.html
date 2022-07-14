@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background-color: #f5f7f9;
+    }
+
+    .nav {
+      background-color: #ffffff;
+    }
+
+    .search-bar input {
+      background-color: #f5f7f9;
+    }
+
+    .left-pane {
+      background-color: #d4dadf;
+      height: auto;
+    }
+
+    .left-pane input {
+      background-color: #ffffff;
+    }
+
+    .ffffff {
+      background-color: #ffffff;
+    }
+
+    #movie-name {
+      font-weight: 800;
+    }
+  </style>
+  <title>SWC Task 2</title>
+</head>
+<!--  -->
+
+<body>
+  <!-- Navigation Bar -->
+
+  <nav class="flex justify-between nav my-0 px-12 py-4 items-center">
+    <div class="logo-header flex flex-row items-center">
+      <img src="./logo.jpg" alt="logo" class="h-12 w-12" />
+      <span class="font-extrabold pl-4 text-2xl">Movies</span>
+    </div>
+    <div class="search-bar box-border flex flex-row">
+      <form action="" id="form">
+        <input type="text" placeholder="   Quick Search" id="search" class="search px-0.5 py-0.5 box-border" />
+
+        <button type="submit" id="search-btn">
+          <img src="./icons/search.svg" alt="searchicon" />
+        </button>
+      </form>
+    </div>
+  </nav>
+
+  <!-- Left Pane  -->
+  <div class="flex flex-row">
+    <div class="w-1/5 font-semibold left-pane">
+      <div>
+        <input type="text" placeholder="  Search Results" class="box-border px-2 py-1 ml-12 mt-12 w-48" />
+      </div>
+      <div class="ml-16 mt-6">All Team</div>
+      <div class="ml-16 mt-6">Core</div>
+      <div class="ml-16 mt-6">Developers</div>
+      <div class="ml-16 mt-6">Designers</div>
+      <div class="ml-16 mt-6">Mentors</div>
+
+      <div class='absolute bottom-16'>
+        <button type="button"
+          class="text-white bg-[#050708] hover:bg-[#050708]/80 focus:ring-4 focus:outline-none focus:ring-[#050708]/50 font-medium rounded-lg text-sm px-4 py-3.5 text-center inline-flex items-center dark:hover:bg-[#050708]/40 dark:focus:ring-gray-600 mr-2 ml-16 mb-2">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+            stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+          </svg>
+          ADD
+        </button>
+      </div>
+    </div>
+
+    <!-- Right Pane -->
+    <main id="right-pane" class="flex flex-row flex-wrap"></main>
+  </div>
+  <script src="./js/index.js"></script>
+  <link rel="stylesheet" href="./css/style.css" />
+</body>
+
+</html>
